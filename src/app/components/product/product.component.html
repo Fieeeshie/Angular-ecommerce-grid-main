@@ -1,0 +1,60 @@
+<div class="product container">
+    <div class="product__container" *ngFor="let product of gadget">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__discount">
+            <span class="product__available">Available</span>
+            <span class="product__category">Appliances</span>
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__price">₱ {{ product.price }}</p>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+        <div class="product__cartbuy">
+            <p class="product__cart">Add to Cart</p>
+            <p class="product__buy">Buy Now</p>
+        </div>
+    </div>
+</div>
+<div class="product container">
+    <div class="product__container" *ngFor="let product of furniture">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__discount">
+            <span class="product__available">Available</span>
+            <span class="product__category">Furniture</span>
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__price">₱ {{ product.price }}</p>
+            <p class="product__description">{{ product.description }}</p> 
+        </div>
+        <div class="product__cartbuy">
+            <p class="product__cart">Add to Cart</p>
+            <p class="product__buy">Buy Now</p>
+        </div>
+    </div>
+</div>
+<div class="product container">
+    <div class="product__container" *ngFor="let product of shoe">
+        <div class="product__img">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="product__discount">
+            <span class="product__available">Available</span>
+            <span class="product__category">Electronic</span>
+        </div>
+        <div class="product__info">
+            <h3 class="product__title">{{ product.name }}</h3>
+            <p class="product__price">₱ {{ product.price }}</p>
+            <p class="product__description">{{ product.description }}</p>
+        </div>
+        <div class="product__cartbuy">
+            <p class="product__cart">Add to Cart</p>
+            <p class="product__buy">Buy Now</p>
+        </div>
+    </div>
+</div>
